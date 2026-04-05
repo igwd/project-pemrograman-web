@@ -10,14 +10,18 @@ class HeroSection extends Component
 {
     public $slides = [
         [
-            'title' => 'Welcome to Our Platform',
-            'description' => 'Discover the power of our innovative solution.',
-            'image' => 'https://teknik.warmadewa.ac.id/storage/carousel/01KCFRB8Q55SM25EX5RJSDCNN9.png'
+            'title' => 'Arjuna Wiwaha: Kisah Cinta dan Heroisme Menuju Jalan Spiritual',
+            'description' => 'Anak Agung Gde Krisna Paramita \n I Nyoman Minta',
+            'image' => 'https://press.warmadewa.ac.id/wp-content/uploads/2025/08/Cover-Depan-Arjuna-Wiwaha-scaled.jpg',
+            "author" => "Anak Agung Gde Krisna Paramita, I Nyoman Minta",
+            "views" => 15720
         ],
         [
-            'title' => 'Easy to Use',
+            'title' => 'Urgensi Penataan Ruang Kawasan Perdesaan Berbasis kearifan Lokal Berkelanjutan',
             'description' => 'Intuitive interface designed for your convenience.',
-            'image' => 'https://teknik.warmadewa.ac.id/storage/carousel/01KCFRB8Q55SM25EX5RJSDCNN9.png'
+            'image' => 'https://press.warmadewa.ac.id/wp-content/uploads/2026/01/SAMPUL-BUKU-URGENSI-PENATAAN-RUANG-COMPLETE-scaled.jpg',
+            "author" => "Anak Agung Gde Krisna Paramita, I Nyoman Minta",
+            "views" => 15720
         ]
     ];
     /**

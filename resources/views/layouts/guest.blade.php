@@ -7,17 +7,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-800 font-sans mx-auto">
+  <header class="sticky top-0 left-0 w-full z-100 shadow-md transition-all duration-300">
+    <x-header />
+    <x-navbar />
+  </header>
+  
   <!-- components/navigation -->
-  <x-navigation 
-    :title="'My Product'" 
-    :description="'It is never too late to be what you might have been. - George Eliot'" 
-    :nav-items="[
-      ['label' => 'Features', 'href' => '#features'],
-      ['label' => 'Pricing', 'href' => '#pricing'],
-      ['label' => 'Contact', 'href' => '#contact']
-    ]"
-  />
   <main>
       @yield('content')
   </main>

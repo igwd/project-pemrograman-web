@@ -9,3 +9,39 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+body { font-family: 'Manrope', sans-serif; }
+.font-display { font-family: 'Marcellus', serif; }
+.font-slab   { font-family: 'Roboto Slab', serif; }
+:root {
+    --navy:  #1b2a4a;
+    --navy2: #152038;
+    --red:   #c0292a;
+    --gold:  #c9a227;
+}
+.topbar  { background: var(--navy2); }
+.navbar  { background: var(--navy2); }
+.hero {
+    background: linear-gradient(160deg, #152038 0%, #1e3460 55%, #243b6e 100%);
+    min-height: 540px;
+    position: relative; overflow: hidden;
+}
+.hero::before {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse at 75% 50%, rgba(192,41,42,.2) 0%, transparent 55%);
+}
+.book-banner { background: var(--navy); }
+.bcard { transition: transform .3s, box-shadow .3s; }
+.bcard:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,.18); }
+.stat-bar { background: linear-gradient(90deg, var(--red) 0% 50%, var(--navy2) 50% 100%); }
+.nl-bar  { background: var(--navy2); }
+footer   { background: var(--navy2); }
+.ddmenu  { display:none; }
+.ddwrap:hover .ddmenu { display:block; }
+@keyframes fadeUp {
+    from { opacity:0; transform:translateY(24px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+.fu  { animation: fadeUp .7s ease both; }
+.fu2 { animation: fadeUp .7s .2s ease both; }
+.fu3 { animation: fadeUp .7s .4s ease both; }
